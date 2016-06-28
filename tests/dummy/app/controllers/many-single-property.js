@@ -4,7 +4,7 @@ import {ValidationMixin, validateEach} from "ember-cli-simple-validation/mixins/
 var ManyController = Ember.Controller.extend(ValidationMixin, {
     uniqueName: validateEach("name", function (name) {
         var filtered = this.get("model").filter(function (person) {
-            return person.get("name") === name
+            return person.get("name") === name;
         });
         return filtered.length === 1;
     }),

@@ -5,7 +5,8 @@ export default Ember.Route.extend({
     model: function() {
         var one = Many.create();
         var two = Many.create();
-        return Ember.A([one, two]);
+        var three = Many.create();
+        return Ember.A([one, two, three]);
     },
     setupController: function (controller, model) {
         controller.set("model", model);
