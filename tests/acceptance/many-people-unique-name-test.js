@@ -23,7 +23,7 @@ module('Acceptance: Multiple People Unique Name', {
     }
 });
 
-test('xxx all people must have a unique name', function (assert) {
+test('all people must have a unique name', function (assert) {
     visit('/many-single-property');
 
     andThen(function () {
